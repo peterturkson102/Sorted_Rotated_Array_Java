@@ -8,7 +8,7 @@ class Main {
     /* Searches an element key in a
        pivoted sorted array arrp[]
        of size n */
-    static int pivotedBinarySearch(int arr[], int n, int key)
+    static int pivotBinarySearch(int arr[], int n, int key)
     {
         int pivot = findPivot(arr, 0, n - 1);
 
@@ -83,6 +83,6 @@ class Main {
         System.out.println("Enter the element to find");
         int key= sc.nextInt();
         System.out.println("Index of the element is : "
-                + pivotedBinarySearch(arr1, elementNumber, key));
+                + pivotBinarySearch(arr1, elementNumber, key));
     }
 }
